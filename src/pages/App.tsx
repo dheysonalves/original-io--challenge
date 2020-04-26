@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Route, Switch } from 'react-router-dom';
 
-import Homepage from './Homepage';
-import NoMatchPage from './NoMatchPage';
+import Homepage from './Home/Homepage';
+import NoMatchPage from './NoMatch/NoMatchPage';
 
 const App = () => {
   return (

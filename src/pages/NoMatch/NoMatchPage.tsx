@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-import PageContainer from '../components/PageContainer';
+import PageContainer from '../../components/PageContainer';
 
 const NoMatchPage = () => {
   const { t } = useTranslation();

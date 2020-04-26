@@ -3,7 +3,8 @@
   "plugins": ["simple-import-sort", "prettier"],
   "rules": {
     "simple-import-sort/sort": [
-      "error",
+			"error",
+			"autofix",
       {
         "groups": [
           // Side effect imports
