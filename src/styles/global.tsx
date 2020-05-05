@@ -4,11 +4,11 @@ import { normalize } from 'styled-normalize';
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
 
-	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
   body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

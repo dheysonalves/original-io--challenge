@@ -6,15 +6,17 @@ import styled, { keyframes } from 'styled-components';
 
 import PageContainer from '../../components/PageContainer';
 import Header from '../../components/Layout/Header/NavBar';
+import Main from '../../components/Layout/Main';
 
 const Homepage = () => {
-  const { t } = useTranslation();
+	const { t } = useTranslation();
 
-  return (
-    <PageContainer>
+	return (
+		<PageContainer>
 			<Header />
-    </PageContainer>
-  );
+			<Main />
+		</PageContainer>
+	);
 };
 
 export default Homepage;

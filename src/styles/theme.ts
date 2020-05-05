@@ -7,7 +7,7 @@ export const foregroundColor = theme('mode', {
 });
 
 export const backgroundColor = theme('mode', {
-  dark: '#212121',
+  dark: '#fff',
   light: '#ffffff',
 });
 

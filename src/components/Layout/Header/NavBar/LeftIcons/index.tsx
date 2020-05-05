@@ -1,10 +1,6 @@
 /* eslint-disable */
 
 import React from 'react';
-import Brand from './Brand/index';
-import RightIcons from './RightIcons';
-import LeftIcons from './LeftIcons';
-import * as S from './styles';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,12 +8,19 @@ import MediaQuery from 'react-responsive';
 
 const header = () => {
 	return (
-		<S.Container>
-			<LeftIcons />
-			<Brand />
-			<RightIcons />
-		</S.Container>
+		<>
+			<button style={buttonWrapper}>
+				<FontAwesomeIcon icon={faBars} color="#686868" size="2x" />
+			</button>
+		</>
 	);
 }
+
+const buttonWrapper = {
+	backgroundColor: 'transparent',
+	borderColor: 'transparent'
+}
+
+
 
 export default header;
