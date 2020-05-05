@@ -31,5 +31,7 @@ export const Subtitle = styled.h3`
 `;
 
 export const Image = styled.img`
-
+	width: 250px;
+	height: 324px;
+	margin: 0 auto;
 `;
