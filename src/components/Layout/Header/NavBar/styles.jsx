@@ -6,4 +6,5 @@ export const Container = styled.header`
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	padding: 15px;
 `;

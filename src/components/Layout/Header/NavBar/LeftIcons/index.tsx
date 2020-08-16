@@ -6,21 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import MediaQuery from 'react-responsive';
 
+import * as S from './styles';
+
 const header = () => {
 	return (
 		<>
-			<button style={buttonWrapper}>
+			<S.Button>
 				<FontAwesomeIcon icon={faBars} color="#686868" size="2x" />
-			</button>
+			</S.Button>
 		</>
 	);
 }
-
-const buttonWrapper = {
-	backgroundColor: 'transparent',
-	borderColor: 'transparent'
-}
-
-
 
 export default header;

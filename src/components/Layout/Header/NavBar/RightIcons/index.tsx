@@ -6,30 +6,19 @@ import Styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 
+import * as S from './styles';
 
 const index = () => {
 	return (
-		<Container>
-			<button style={buttonWrapper}>
+		<S.Container>
+			<S.Button>
 				<FontAwesomeIcon icon={faSearch} color="#686868" size="2x" />
-			</button>
-			<button style={buttonWrapper}>
+			</S.Button>
+			<S.Button>
 				<FontAwesomeIcon icon={faShoppingBag} color="#686868" size="2x" />
-			</button>
-		</Container>
+			</S.Button>
+		</S.Container>
 	);
 };
-
-const Container = Styled.div`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-`;
-
-const buttonWrapper = {
-	backgroundColor: 'transparent',
-	borderColor: 'transparent'
-}
-
 
 export default index;
