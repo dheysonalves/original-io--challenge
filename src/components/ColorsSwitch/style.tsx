@@ -11,24 +11,24 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-`;
-
-export const Circle = styled.div`
-	width: 30px;
-	height: 30px;
-	border: 2px solid #363636;
-	background-color: ${props => props.color};
-	border-radius: 20px;
+	width: 50%;
 `;
 
 export const Button = styled.button`
-	background-color: transparent;
-	border: 0px solid transparent;
-	width: 30px;
-	height: 30px;
+	background-color: ${props => props.color};
+	border: none;
+	outline: none;
 	cursor: pointer;
-	border-radius: 20px;
-	margin-right: 10px;
+	height: auto;
+	padding: 15px;
+	border-radius: 50%;
+
+	:focus {
+		border: 2px solid #363636;
+	}
+	:active {
+		border: 2px solid #363636;
+	}
 `;
 
 export const Title = styled.h1`

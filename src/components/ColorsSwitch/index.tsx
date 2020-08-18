@@ -6,9 +6,6 @@ type ColorProps = {
 	color: string
 }
 
-function circleMapping({ color }: ColorProps) {
-	return <S.Circle color={color}></S.Circle>
-}
 
 const index = ({ color }: ColorProps) => {
 	return (
@@ -17,12 +14,10 @@ const index = ({ color }: ColorProps) => {
 				Cor:
 			</S.Title>
 			<S.Wrapper>
-				<S.Button>
-					<S.Circle color={color}></S.Circle>
-				</S.Button>
-				<S.Button>
-					<S.Circle color={color}></S.Circle>
-				</S.Button>
+				<S.Button color="#A9095E" />
+				<S.Button color="#6B85C1" />
+				<S.Button color="#A14830" />
+				<S.Button color="#000000" />
 			</S.Wrapper>
 		</S.Container>
 	);
