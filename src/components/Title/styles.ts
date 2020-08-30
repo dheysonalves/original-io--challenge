@@ -14,7 +14,7 @@ export const Title = styled.h1<TitleProps>`
 	line-height: 29px;
 	letter-spacing: 1px;
 	color: ${props => props.color};
-	font-size: ${props => props.size};
+	font-size: ${props => props.size + 'px'};
 	text-align: ${props => props.align};
 	text-transform: ${props => props.transform};
 	margin: 0;

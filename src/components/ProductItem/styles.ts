@@ -96,4 +96,8 @@ export const SizeSection = styled.section`
 		margin-bottom: 10px;
 	`;
 
+	export const DescriptionContainer = styled.div`
+		margin-top: 10px;
+		margin-bottom: 20px;
+	`;
 
