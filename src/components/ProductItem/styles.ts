@@ -88,6 +88,7 @@ export const SizeSection = styled.section`
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
 	`;
 
 	export const Price = styled.div`

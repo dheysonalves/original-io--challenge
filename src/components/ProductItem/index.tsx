@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import Swiper from '../SwiperImage';
 import Circle from '../ColorsSwitch';
 import Paragraph from '../Paragraph';
+import Button from '../Button';
 
 const index = () => {
 	return (
@@ -60,6 +61,7 @@ const index = () => {
 							Ou 6x de R$ 9,20
 						</Paragraph>
 					</S.Price>
+					<Button />
 				</S.PriceContainer>
 			</S.Wrapper>
 		</S.Container>
