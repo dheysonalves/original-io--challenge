@@ -20,34 +20,47 @@ const index = () => {
 				<S.SizeSection>
 					<Paragraph size={14} color="#202020" align="none" transform="none" >
 						Tamanho
-			</Paragraph>
+					</Paragraph>
 					<Link to="/" color="#DE8F75">
 						<Paragraph color="#DE8F75" size={14}>Guia de Medidas</Paragraph>
 					</Link>
 				</S.SizeSection>
 				<S.ProductSizeContainer>
 					<S.ProductSize>
-						20
-				</S.ProductSize>
-					<S.ProductSize>
-						18
-				</S.ProductSize>
-					<S.ProductSize>
-						40
-				</S.ProductSize>
-					<S.ProductSize>
-						60
-				</S.ProductSize>
-					<S.ProductSize>
-						24
-				</S.ProductSize>
-					<S.ProductSize>
-						26
-				</S.ProductSize>
-					<S.ProductSize>
-						28
-				</S.ProductSize>
+							20
+					</S.ProductSize>
+						<S.ProductSize>
+							18
+					</S.ProductSize>
+						<S.ProductSize>
+							40
+					</S.ProductSize>
+						<S.ProductSize>
+							60
+					</S.ProductSize>
+						<S.ProductSize>
+							24
+					</S.ProductSize>
+						<S.ProductSize>
+							26
+					</S.ProductSize>
+						<S.ProductSize>
+							28
+					</S.ProductSize>
 				</S.ProductSizeContainer>
+				<S.PriceContainer>
+					<S.Price>
+						<Paragraph size={12} color="#E35442" align="none" transform="none" decoration="line-through">
+							R$ 69,00
+						</Paragraph>
+						<Paragraph size={16} color="#686868" align="none" transform="none">
+							R$ 55,20
+						</Paragraph>
+						<Paragraph size={12} color="#7F7F7F" align="none" transform="none">
+							Ou 6x de R$ 9,20
+						</Paragraph>
+					</S.Price>
+				</S.PriceContainer>
 			</S.Wrapper>
 		</S.Container>
 	);

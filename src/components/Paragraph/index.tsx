@@ -8,7 +8,8 @@ type ParagraphProps = {
 	size: number,
 	color: string,
 	label: string,
-	children: string
+	children: string,
+	decoration: string
 }
 
 const defaultProps = {
@@ -17,11 +18,12 @@ const defaultProps = {
 	size: 16,
 	color: '#7f7f7f',
 	label: '',
+	decoration: 'none'
 }
 
-const index = ({ color, size, transform, align, label, children, ...props }: ParagraphProps) => {
+const index = ({ color, size, transform, align, label, children, decoration, ...props }: ParagraphProps) => {
 	return (
-		<S.Paragraph color={color} size={size} transform={transform} align={align} {...props}>
+		<S.Paragraph color={color} size={size} transform={transform} decoration={decoration} align={align} {...props}>
 			{label || children}
 		</S.Paragraph>
 	);

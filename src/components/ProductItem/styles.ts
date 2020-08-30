@@ -84,4 +84,15 @@ export const SizeSection = styled.section`
 	}
 	`;
 
+	export const PriceContainer = styled.div`
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	`;
+
+	export const Price = styled.div`
+		margin-top: 10px;
+		margin-bottom: 10px;
+	`;
+
 
