@@ -67,11 +67,6 @@ const index = () => {
 						veniam perferendis voluptatem nulla illo facilis esse magni. Maxime.
 			</Paragraph>
 				</S.DescriptionContainer>
-				<Title size={24} label="Quem viu, viu também" />
-				<S.CardContainer>
-					<Card />
-					<Card />
-				</S.CardContainer>
 			</S.Wrapper>
 		</S.Container>
 	);

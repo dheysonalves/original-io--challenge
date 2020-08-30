@@ -2,12 +2,16 @@
 
 import React from 'react';
 import ProductItem from '../../ProductItem';
+import ProductList from '../../ProductList';
+
+import * as S from './styles';
 
 const index = () => {
 	return (
-		<main>
+		<S.Main>
 			<ProductItem />
-		</main>
+			<ProductList />
+		</S.Main>
 	);
 }
 
