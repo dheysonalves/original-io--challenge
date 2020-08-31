@@ -7,6 +7,7 @@ import styled, { keyframes } from 'styled-components';
 import PageContainer from '../../components/PageContainer';
 import Header from '../../components/Layout/Header/NavBar';
 import Main from '../../components/Layout/Main';
+import Footer from '../../components/Layout/Footer';
 
 const Homepage = () => {
 	const { t } = useTranslation();
@@ -15,6 +16,7 @@ const Homepage = () => {
 		<PageContainer>
 			<Header />
 			<Main />
+			<Footer />
 		</PageContainer>
 	);
 };
