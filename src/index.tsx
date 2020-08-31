@@ -1,7 +1,6 @@
 import './i18n';
 
 import React from 'react';
-
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -10,9 +9,9 @@ import { ThemeProvider } from 'styled-components';
 
 import { usePrefersDarkMode } from './hooks/usePrefersDarkMode';
 import App from './pages/App';
+import * as serviceWorker from './serviceWorker';
 import configureStore from './store/configureStore';
 import { GlobalStyle } from './styles/global';
-import * as serviceWorker from './serviceWorker';
 
 const AppContainer = () => {
   const prefersDarkMode = usePrefersDarkMode();
