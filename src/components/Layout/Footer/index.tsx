@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useCallback, useReducer,useState } from 'react';
+import React, { useCallback, useReducer, useState } from 'react';
 
 import Logotype from '../../Image';
 import Paragraph from '../../Paragraph';
@@ -99,12 +99,25 @@ const index: React.FC = () => {
                     )
                 }
             </S.ListWrapper>
+            <S.IconsWrapper>
+                <S.RowContainer>
+                    <Logotype src={require("../../../assets/facebook.svg")} width="auto" height="auto" />
+                    <Logotype src={require("../../../assets/insta.svg")} width="auto" height="auto" />
+                    <Logotype src={require("../../../assets/pinterest.svg")} width="auto" height="auto" />
+                </S.RowContainer>
+                <S.RowContainer>
+                    <Logotype src={require("../../../assets/img/vtex-pci-200.png")} width="auto" height="auto" />
+                    <Logotype src={require("../../../assets/img/selo-ebit.png")} width="auto" height="auto" />
+                </S.RowContainer>
+            </S.IconsWrapper>
             <S.Infomation>
                 <Paragraph size={12} align="none" color="#fff">
                     Via Mia | V. Milano Centro Comercio de Bolsas Eireli - EPP. Av.das Américas, 500 - bloco 20, loja 126 - Barra da Tijuca - Rio de Janeiro - RJ - CEP: 22640-100 CNPJ: 05.292.288/0002-10 - I.E: 86.732.548 - E-mail: ecommerce@viamia.com.br
             </Paragraph>
                 <S.SpacingDiv />
-                <Logotype src="https://source.unsplash.com/random" width="200px" height="60px" />
+                <S.FooterLogotype>
+                    <Logotype src={require("../../../assets/original-2.svg")} width="auto" height="21px" />
+                </S.FooterLogotype>
             </S.Infomation>
         </S.Container>
     )

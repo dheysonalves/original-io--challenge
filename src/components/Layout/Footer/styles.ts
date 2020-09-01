@@ -50,3 +50,27 @@ export const UnorderedItem = styled.li`
     color: #202020;
     margin-bottom: 10px;
 `;
+
+
+export const IconsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+`;
+
+export const RowContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+`;
+
+export const FooterLogotype = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+`;
+
+export const FormWrapper = styled.div``;
