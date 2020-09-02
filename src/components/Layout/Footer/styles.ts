@@ -51,7 +51,6 @@ export const UnorderedItem = styled.li`
     margin-bottom: 10px;
 `;
 
-
 export const IconsWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -73,4 +72,20 @@ export const FooterLogotype = styled.div`
     width: 100%;
 `;
 
-export const FormWrapper = styled.div``;
+export const FormWrapper = styled.div`
+    margin: 10px;
+`;
+
+export const Input = styled.input`
+    margin: 10px;
+    width: 100%;
+    border: 0px;
+    outline: none;
+    border-bottom: 2px solid #AEB6C1;
+    color: #202020
+`;
+
+export const RowInput = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;

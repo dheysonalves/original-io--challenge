@@ -3,6 +3,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useCallback, useReducer, useState } from 'react';
 
+import Button from '../../Button';
 import Logotype from '../../Image';
 import Paragraph from '../../Paragraph';
 import * as S from './styles';
@@ -110,6 +111,16 @@ const index: React.FC = () => {
                     <Logotype src={require("../../../assets/img/selo-ebit.png")} width="auto" height="auto" />
                 </S.RowContainer>
             </S.IconsWrapper>
+            <S.FormWrapper>
+                <Paragraph size={20} align="center" color="#AEB6C1" transform="uppercase">
+                    Assine nossa news
+                </Paragraph>
+                <S.Input type="text" placeholder="Nome" alt="email" id="email" />
+                <S.RowInput>
+                    <S.Input type="email" placeholder="Email" color="#202020" alt="email" />
+                    <Button label="Enviar" textColor="#fff" color="#DE8F75" />
+                </S.RowInput>
+            </S.FormWrapper>
             <S.Infomation>
                 <Paragraph size={12} align="none" color="#fff">
                     Via Mia | V. Milano Centro Comercio de Bolsas Eireli - EPP. Av.das Américas, 500 - bloco 20, loja 126 - Barra da Tijuca - Rio de Janeiro - RJ - CEP: 22640-100 CNPJ: 05.292.288/0002-10 - I.E: 86.732.548 - E-mail: ecommerce@viamia.com.br
