@@ -118,7 +118,7 @@ const index: React.FC = () => {
                 <S.Input type="text" placeholder="Nome" alt="email" id="email" />
                 <S.RowInput>
                     <S.Input type="email" placeholder="Email" color="#202020" alt="email" />
-                    <Button label="Enviar" textColor="#fff" color="#DE8F75" />
+                    <Button label="Enviar" textColor="#fff" color="#DE8F75" eventBackground="#F2A398" />
                 </S.RowInput>
             </S.FormWrapper>
             <S.Infomation>
