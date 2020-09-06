@@ -43,7 +43,6 @@ export const Swiper = styled.div`
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	z-index: 2;
 `;
 
 export const PlayButton = styled.button`
@@ -53,6 +52,7 @@ export const PlayButton = styled.button`
 	background-color: transparent;
 	margin: 0;
 	padding: 0;
+	z-index: 1;
 `;
 
 export const StepButton = styled.button`
@@ -63,6 +63,7 @@ export const StepButton = styled.button`
 	border: none;
 	outline: none;
 	border: 2px solid #fff;
+	z-index: 2;
 
 	:active {
 		padding: 6px;

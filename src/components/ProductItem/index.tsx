@@ -4,6 +4,9 @@ import React from 'react';
 
 import * as S from './styles';
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import Swiper from '../SwiperImage';
 import Circle from '../ColorsSwitch';
@@ -12,9 +15,53 @@ import Button from '../Button';
 import Title from '../Title';
 import Card from '../Card';
 
+import Image from '../../assets/img/1.jpg';
+
+const ModalComponent = (isOpen: boolean, closeCallback: ((event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>) => void) | undefined) => {
+	return (
+		<Modal
+			isOpen={isOpen}
+			onRequestClose={closeCallback}
+			contentLabel="Example Modal"
+			shouldCloseOnOverlayClick
+			overlayClassName="outline"
+			className="Modal"
+		>
+			<S.WrapperWithPadder>
+				<S.CardContainer>
+					<S.ModalTitle>Produto adicionado com sucesso!</S.ModalTitle>
+					<FontAwesomeIcon icon={faTimes} onClick={closeCallback} size="lg" color="#5F75AA" />
+				</S.CardContainer>
+				<S.ModalWrapper>
+					<img src={Image} width="100%" height="auto" />
+					<S.ModalActions>
+						<Button />
+						<Link to="/" color="#AEB6C1" >
+							<Paragraph color="#AEB6C1" size={18}>
+								Guia de Medidas
+						</Paragraph>
+						</Link>
+					</S.ModalActions>
+
+				</S.ModalWrapper>
+			</S.WrapperWithPadder>
+		</Modal>
+	)
+}
 const index = () => {
+	const [modalIsOpen, setIsOpen] = React.useState(false);
+
+	function openModal() {
+		setIsOpen(true);
+	}
+
+	function closeModal() {
+		setIsOpen(false);
+	}
+
 	return (
 		<S.Container>
+			{ModalComponent(modalIsOpen, closeModal)}
 			<S.TextTitle>Rasteira Tira Dedo</S.TextTitle>
 			<S.Subtitle>RT 0568 | 03.07.0653</S.Subtitle>
 			<Swiper />
@@ -57,7 +104,7 @@ const index = () => {
 							Ou 6x de R$ 9,20
 				</Paragraph>
 					</S.Price>
-					<Button />
+					<Button click={openModal}/>
 				</S.PriceContainer>
 				<S.DescriptionContainer>
 					<Title align="none" size={16} transform="none" />
