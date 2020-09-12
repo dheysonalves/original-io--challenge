@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 
 import * as S from './styles';
 import { Link } from 'react-router-dom';
@@ -14,10 +14,13 @@ import Paragraph from '../Paragraph';
 import Button from '../Button';
 import Title from '../Title';
 import Card from '../Card';
+import SlideDrawer from '../Drawer';
+import Backdrop from '../Drawer/Backdrop';
 
 import Image from '../../assets/img/1.jpg';
 
-const ModalComponent = (isOpen: boolean, closeCallback: ((event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>) => void) | undefined) => {
+const ModalComponent = (isOpen: boolean, drawerCallback: any, closeCallback: ((event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>) => void) | undefined) => {
+
 	return (
 		<Modal
 			isOpen={isOpen}
@@ -35,14 +38,13 @@ const ModalComponent = (isOpen: boolean, closeCallback: ((event: React.MouseEven
 				<S.ModalWrapper>
 					<img src={Image} width="100%" height="auto" />
 					<S.ModalActions>
-						<Button />
+						<Button click={drawerCallback} />
 						<Link to="/" color="#AEB6C1" >
 							<Paragraph color="#AEB6C1" size={18}>
 								Guia de Medidas
 						</Paragraph>
 						</Link>
 					</S.ModalActions>
-
 				</S.ModalWrapper>
 			</S.WrapperWithPadder>
 		</Modal>
@@ -50,6 +52,15 @@ const ModalComponent = (isOpen: boolean, closeCallback: ((event: React.MouseEven
 }
 const index = () => {
 	const [modalIsOpen, setIsOpen] = React.useState(false);
+	const [isDrawerOpen, setDrawerOpen] = useState(false);
+
+	const setDrawer = useCallback(() => {
+		setDrawerOpen(!isDrawerOpen);
+	}, [isDrawerOpen]);
+
+	const backDropHandler = useCallback(() => {
+		setDrawerOpen(false);
+	}, []);
 
 	function openModal() {
 		setIsOpen(true);
@@ -61,7 +72,13 @@ const index = () => {
 
 	return (
 		<S.Container>
-			{ModalComponent(modalIsOpen, closeModal)}
+			{ModalComponent(modalIsOpen, setDrawer, closeModal)}
+			<SlideDrawer transform={isDrawerOpen} />
+			{
+				isDrawerOpen ? (
+					<Backdrop close={backDropHandler} />
+				) : null
+			}
 			<S.TextTitle>Rasteira Tira Dedo</S.TextTitle>
 			<S.Subtitle>RT 0568 | 03.07.0653</S.Subtitle>
 			<Swiper />
