@@ -4,14 +4,14 @@ interface SlideProps {
 	transformStyle?: any;
 };
 
-export const SlideDrawer = styled.div<SlideProps>`
-	height: 100%;
-	background-color: #fff;
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	z-index: 10;
-	box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
-	transition: transform 0.3s ease-out;
+export const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+`;
+
+export const Header = styled.div`
+	display: flex;
+	justify-content: space-between;
 `;
