@@ -38,7 +38,8 @@ const ModalComponent = (isOpen: boolean, drawerCallback: any, closeCallback: ((e
 				<S.ModalWrapper>
 					<img src={Image} width="100%" height="auto" />
 					<S.ModalActions>
-						<Button click={drawerCallback} />
+						<Button click={drawerCallback} style={{ padding: 20 }} />
+						<br/>
 						<Link to="/" color="#AEB6C1" >
 							<Paragraph color="#AEB6C1" size={18}>
 								Guia de Medidas
@@ -121,7 +122,7 @@ const index = () => {
 							Ou 6x de R$ 9,20
 				</Paragraph>
 					</S.Price>
-					<Button click={openModal}/>
+					<Button click={openModal} style={{ padding: 20 }} />
 				</S.PriceContainer>
 				<S.DescriptionContainer>
 					<Title align="none" size={16} transform="none" />
