@@ -19,6 +19,19 @@ import Backdrop from '../Drawer/Backdrop';
 
 import Image from '../../assets/img/1.jpg';
 
+const data =
+	{
+		title: '',
+		subtitle: '',
+		sizes: ['20', '18', '40', '60', '24', '26', '28'],
+		price: 'R$ 69,00',
+		discount: 'R$ 55,20',
+		parcels: '6',
+		divided: 'R$ 9,20'
+
+	}
+
+
 const ModalComponent = (isOpen: boolean, drawerCallback: any, closeCallback: ((event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>) => void) | undefined) => {
 
 	return (
@@ -83,12 +96,12 @@ const index = () => {
 			<S.TextTitle>Rasteira Tira Dedo</S.TextTitle>
 			<S.Subtitle>RT 0568 | 03.07.0653</S.Subtitle>
 			<Swiper />
-			<Circle color="#ff6100" />
 			<S.Wrapper>
+				<Circle color="#ff6100" />
 				<S.SizeSection>
 					<Paragraph size={14} color="#202020" align="none" transform="none">
 						Tamanho
-			</Paragraph>
+				</Paragraph>
 					<Link to="/" color="#DE8F75">
 						<Paragraph color="#DE8F75" size={14}>
 							Guia de Medidas

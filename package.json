@@ -34,6 +34,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.3.4",
+    "react-media": "^1.10.0",
     "react-modal": "^3.11.2",
     "react-redux": "^7.2.0",
     "react-responsive": "^8.0.3",
