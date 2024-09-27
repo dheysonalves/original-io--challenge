@@ -16,7 +16,7 @@ export const Button = styled.button<ButtonProps>`
 	border-radius: ${props => props.radius};
 	color: ${props => props.textColor};
 	font-size: ${props => props.size + 'px'};
-	padding: 20px;
+	/* padding: 20px; */
 	text-transform: uppercase;
 
 	:focus {

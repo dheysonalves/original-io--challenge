@@ -10,7 +10,8 @@ import * as S from './styles';
     eventColor: string;
     label: string;
     size: number;
-    click?: any
+    click?: any,
+    style?: any,
   };
 
   const defaultProps = {
@@ -32,6 +33,7 @@ import * as S from './styles';
     eventColor,
     size,
     click,
+    style,
     ...props
   }: Buttonprops) => {
     return (
@@ -43,6 +45,7 @@ import * as S from './styles';
         eventBackground={eventBackground}
         eventColor={eventColor}
         onClick={click}
+        style={style}
         {...props}
       >
         {label}

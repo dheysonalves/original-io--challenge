@@ -5,12 +5,13 @@ type TitleProps = {
 	transform: string,
 	size: number,
 	color: string,
+	weight: string,
 }
 
 export const Title = styled.h1<TitleProps>`
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: ${props => props.weight};
 	line-height: 29px;
 	letter-spacing: 1px;
 	color: ${props => props.color};
